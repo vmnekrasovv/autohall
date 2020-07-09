@@ -42,64 +42,99 @@ body {
 	position: relative;
 }
 
+
+
+
+
+
+
+
+
+/** 
+	Custom  styles 
+*/
+
+/* Общие правила */
+
+.button {
+	height: 50px;
+	padding: 0 25px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #d12f22;
+	border-bottom: 3px #ac160a solid;
+	font-size: 20px;
+	line-height: 50px;
+	color: #fff;
+	font-family: "BebasRegular";
+}
+
+.button:hover {
+	background-color: #d92f22;
+}
+
+
+
+
+/* header */ 
+
 .header {
 	min-height: 644px;
 	position: relative;
-	background: url('../img/top_bg.jpg') repeat-x top center;
-	font-family: BebasBold;
+	background: url('../img/header_bg.jpg') repeat-x top center;
+	font-family: 'BebasBold';
 }
 
 .header a {
 	color: #fff;
 }
 
-.top_line {
-	min-height: 97px;
-	box-shadow: rgba(255,255,255,.2) 0 0 0 1px;
-	top: 0;
-	width: 100%;
-	background-color: rgba(0,0,0,.6);
-	padding: 23px 0 12px;
-}
-
-.top_addr {
-	line-height: 29px;
-	padding-left: 46px;
-	background: url('../img/top_map_icon.png') no-repeat top left;
-}
-
-.top_addr strong {
+.header strong {
 	color: #c82d21;
 	display: block;
 	font-weight: normal;
-	text-transform: uppercase;
 	font-size: 33px;
 }
 
-.top_addr a {
+/* header__top-line */
+
+.header__top-line {
+	padding: 24px 0 16px;
+	box-shadow: rgba(255,255,255,.2) 0 0 0 1px;
+	background-color: rgba(0,0,0,.6);
+}
+
+.header__top-line a {
 	font-size: 22px;
 }
 
-.logo_wrap {
+.header__address {
+	padding-left: 46px;
+	line-height: 29px;
+	background: url('../img/top_map_icon.png') no-repeat top left;
+}
+
+.header__logo {
 	position: relative;
 	width: 240px;
 	margin: auto;
 }
 
-.logo {
+.header__logo a {
 	position: absolute;
 	margin-top: -20px;
 }
 
-.ta_right {
-	background-image: none;
-	padding-left: 0;
+.header__phone {
 	text-align: right;
+	line-height: 29px;
 }
 
-.ta_right span {
+.header__phone span {
 	color: #fff;
 }
+
+/* END header__top-line */
 
 h1 {
 	font-size: 40px;
@@ -109,48 +144,36 @@ h1 {
 	text-shadow: rgba(0,0,0,0.75) 0 2px;
 }
 
-.button {
-	background-color: #d12f22;
-	display: inline-block;
-	font-size: 20px;
-	height: 50px;
-	line-height: 50px;
-	padding: 0 25px;
-	vertical-align: middle;
-	border-bottom: 3px #ac160a solid;
-	color: #fff;
-	font-family: "BebasRegular";
-}
+/* header__buttons */
 
-.button:hover {
-	background-color: #d92f22;
-}
 
-.header_buttons {
-	position: absolute;
+.header__buttons {
 	width: 100%;
+	position: absolute;
 	bottom: 30px;
 }
 
-.header_buttons .button {
+.header__buttons .button {
 	margin-right: 20px;
 }
 
-.st_button {
+.header__button-icon {
+	padding-top: 8px;
 	padding-left: 62px;
 	line-height: 18px;
-	padding-top: 8px;
 	text-align: left;
 	background: url('../img/camera_icon.png') no-repeat 8px 8px;
 	background-color: #d12f22;
 }
+
+
+
 
 .top_nav {
 	height: 62px;
 	background-color: #242424;
 	box-shadow: rgba(255,255,255,.2) 0 0 0 1px;
 	font-family: "BebasRegular";
-	text-transform: uppercase;
 }
 
 .top_nav ul {
@@ -241,7 +264,6 @@ h1 {
 
 .main_cats h2,
 .art_header {
-	text-transform: uppercase;
 	color: #c9c9c9;
 	font-family: "BebasRegular";
 	font-size: 40px;
@@ -490,7 +512,6 @@ article.content .art_header {
 
 .sb_header h2 {
 	margin: 0;
-	text-transform: uppercase;
 	font-family: "BebasRegular";
 	font-size: 36px;
 	line-height: 50px; 
