@@ -42,19 +42,15 @@ body {
 	position: relative;
 }
 
-
-
-
-
-
-
-
-
 /** 
 	Custom  styles 
 */
 
 /* Общие правила */
+
+* {
+	box-sizing: border-box;
+}
 
 .button {
 	height: 50px;
@@ -72,8 +68,6 @@ body {
 .button:hover {
 	background-color: #d92f22;
 }
-
-
 
 
 /* header */ 

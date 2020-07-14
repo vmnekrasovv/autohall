@@ -13,6 +13,26 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+	.header__top-line .header__address {
+		background: none;
+		padding-left: 0;
+	}
+
+	.header__top-line .row div:nth-child(2) {
+		order: 1;
+	}
+
+	.main_cats h2::before,
+	.main_cats h2::after {
+		display: none;
+	}
+
+	article.content h2::before,
+	article.content h2::after {
+		display: none;
+	}
+
+
 }
 
 /* Extra Small Devices, Phones */
@@ -22,6 +42,63 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	
+	.header {
+		min-height: 390px;
+		background-size: cover;
+	}
+
+	.header strong {
+		font-size: 18px;
+	}
+
+	.header__top-line {
+		padding: 14px 0 10px;
+	}
+
+	.header__top-line a {
+		font-size: 12px;
+	}
+
+	.header__phone,
+	.header__address {
+		line-height: 18px;
+	}
+
+	.header__logo {
+		width: 140px;
+	}
+
+	.header__logo a {
+		margin-top: -12px;
+    	width: 50%;
+    	left: 25%;
+	}
+
+	.header__logo a img {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 20px;
+		margin-top: 34px;
+	}
+
+	.button {
+		height: 43px;
+	    padding: 0 22px;
+	    display: inline-block; 
+	    font-size: 14px;
+	    line-height: 44px;
+	}
+
+	.header__button-icon {
+	    padding-top: 6px;
+	    padding-left: 62px;
+	    line-height: 15px;
+	    background-color: #d12f22;
+	    background-position-y: 5px;
+	}
 
 }
 
