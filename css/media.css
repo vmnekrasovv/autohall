@@ -52,7 +52,7 @@
 	}
 
 	.header strong {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	.header__top-line {
@@ -60,12 +60,12 @@
 	}
 
 	.header__top-line a {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.header__phone,
 	.header__address {
-		line-height: 16px;
+		line-height: 17px;
 	}
 
 	.header__logo {
@@ -91,6 +91,10 @@
 		bottom: 20px;
 	}
 
+	.header__buttons .button {
+		margin-right: 15px;
+	}
+
 	.button {
 		height: 43px;
 	    padding: 0 22px;
@@ -108,7 +112,7 @@
 	}
 
 	.top-nav {
-		min-height: 80vh;
+		min-height: 100vh;
 	}
 
 	.top-nav__item {
@@ -121,6 +125,7 @@
 	} 
 
 	.top-nav__item a {
+		border-left: 0;
 		border-bottom: #3b3b3b 1px solid;
 	}
 
@@ -138,7 +143,7 @@
 	}
 
 	.waranty {
-		margin: 20px auto;
+		margin: 12vh auto;
 	}
 
 	body .main-cats__item-wrap > ul {
@@ -151,6 +156,38 @@
 
 	.h-desc {
 		font-size: 11px;
+	}
+
+	.s-bottom__header h2 {
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.s-bottom__header.button-cont {
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.s-bottom img {
+		width: 100%;
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	.s-bottom__content p {
+		font-size: 14px;
+	}
+
+	.footer .row>div:nth-child(1) {
+		margin-bottom: 20px;
+	}
+
+	.footer .row>div:nth-child(2) {
+		padding-left: 6px;
+	}
+
+	.footer .row>div:nth-child(2) li {
+		margin-bottom: 10px;
 	}
 }
 

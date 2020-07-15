@@ -494,6 +494,7 @@ article.content .art-header {
 }
 
 .home-items__item p {
+	padding-top: 20px;
 	font-size: 14px;
 	color: #050505;
 	text-align: center;
