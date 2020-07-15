@@ -47,7 +47,7 @@
 @media only screen and (max-width : 320px) {
 	
 	.header {
-		min-height: 100vh;
+		min-height: 90vh;
 		background-size: cover;
 	}
 
@@ -69,11 +69,11 @@
 	}
 
 	.header__logo {
-		width: 200px;
+		width: 180px;
 	}
 
 	.header__logo a {
-		margin-top: -25px;
+		margin-top: -15px;
     	width: 50%;
     	left: 25%;
 	}
@@ -112,7 +112,7 @@
 	}
 
 	.top-nav {
-		min-height: 100vh;
+		height: auto;
 	}
 
 	.top-nav__item {
