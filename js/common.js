@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$('.mc_item_wrap').click(function(){
+	$('.main-cats__item-wrap').click(function(){
 		$(this).siblings().removeClass('active').find('ul').hide();
 		$(this).addClass('active').find('ul').toggle();
 	});
@@ -8,7 +8,7 @@ $(document).ready(function() {
 	//equalheight - одинаковая высота колонок
 	//Пример списка элементов:
 	//var eqElement = ".cat_container > div, .home_news > div"
-	var eqElement = ".hi_item, .sb_content > div"
+	var eqElement = ".home-items__item, .s-bottom__content > div"
 	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});
 
 	
