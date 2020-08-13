@@ -38,13 +38,8 @@
 	
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-}
-
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 480px) {
 	
 	.header {
 		min-height: 90vh;
@@ -143,11 +138,15 @@
 	}
 
 	.waranty {
-		margin: 12vh auto;
+		margin: 30px auto;
 	}
 
 	body .main-cats__item-wrap > ul {
 		left: 0;
+	}
+
+	.main-cats h2 {
+		margin-top: 10px;
 	}
 
 	h2.art-header {
@@ -190,6 +189,12 @@
 		margin-bottom: 10px;
 	}
 }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 320px) {
+
+}
+
 
 
 /*==========  Mobile First Method  ==========*/
