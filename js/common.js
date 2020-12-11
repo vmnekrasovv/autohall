@@ -1,5 +1,52 @@
 $(document).ready(function() {
 
+	var waypoint = new Waypoint({
+	  element: document.getElementById('thing'),
+	  handler: function(direction) {
+	  	let
+			topLine 	  = $('.header__top-line'),
+			topLineFix    = 'header__top-line_fixed';
+
+			if(direction == 'down') {
+				topLine.addClass(topLineFix);
+			} else if(direction == 'up'){
+
+				topLine.addClass('header__top-line_up');
+				topLine.removeClass(topLineFix);
+				
+				setTimeout(function(){
+					topLine.removeClass('header__top-line_up');
+				}, 500);
+
+
+			}
+		}
+	});
+
+
+	/*let target 		  = $('#thing'),
+		targetYOffset = target.offset().top,
+		topLine 	  = $('.header__top-line'),
+		topLineFix    = 'header__top-line_fixed';
+
+	$(window).on('scroll', function(){
+
+		if(pageYOffset > targetYOffset){
+			topLine.addClass(topLineFix);
+		} else {
+			topLine.removeClass(topLineFix);
+		}
+
+	});
+*/
+
+	/*$('.home-items').on('mousewheel', function(event) {
+   	 console.log(event.deltaX, event.deltaY, event.deltaFactor);
+	});*/
+
+
+
+
 	$('.main-cats__item-wrap').click(function(){
 		$(this).siblings().removeClass('active').find('ul').hide();
 		$(this).addClass('active').find('ul').toggle();
@@ -65,11 +112,21 @@ $(document).ready(function() {
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.scroll").click(function() {
-		$.scrollTo($(".div"), 800, {
-			offset: -90
+	$(".button").click(function(e) {
+		e.preventDefault();
+
+		
+		$('html, body').animate({
+			scrollTop: $('.footer').offset().top
+		}, 500, function(){
+			//console.log('callback function');
 		});
+
+		/*$.scrollTo(250, 800, {
+			offset: 1000
+		});*/
 	});
+
 	//Скролл до id, указанного в hash URL
 	var elem = window.location.hash;
 	if(elem) {
