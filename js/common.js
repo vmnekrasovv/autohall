@@ -13,15 +13,12 @@ $(document).ready(function() {
 
 				topLine.addClass('header__top-line_up');
 				topLine.removeClass(topLineFix);
-				
-				setTimeout(function(){
-					topLine.removeClass('header__top-line_up');
-				}, 500);
-
+				topLine.removeClass('header__top-line_up');
 
 			}
 		}
 	});
+
 
 
 	/*let target 		  = $('#thing'),
