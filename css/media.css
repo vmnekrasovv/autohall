@@ -13,6 +13,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+
 	.header__top-line .header__address {
 		background: none;
 		padding-left: 0;
@@ -35,12 +36,6 @@
 }
 
 @media only screen and (max-width : 576px) {
-	
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 480px) {
-	
 	.header {
 		min-height: 90vh;
 		background-size: cover;
@@ -64,13 +59,18 @@
 	}
 
 	.header__logo {
-		width: 180px;
+		/*width: 180px;*/
+		width: 33%;
 	}
 
 	.header__logo a {
-		margin-top: -15px;
+		/*margin-top: -15px;
     	width: 50%;
-    	left: 25%;
+    	left: 25%;*/
+
+    	margin-top: -32px;
+	    width: 100%;
+	    left: 0%;
 	}
 
 	.header__logo a img {
@@ -78,9 +78,13 @@
 	}
 
 	h1 {
-		font-size: 20px;
-		margin-top: 58px;
+		font-size: 25px;
+		margin-top: 20%;
 	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px) {
 
 	.header__buttons {
 		bottom: 20px;

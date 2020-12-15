@@ -126,6 +126,9 @@ $(document).ready(function() {
 
 	//Скролл до id, указанного в hash URL
 	var elem = window.location.hash;
+
+	console.log('location.hash: ' + window.location.hash);
+	
 	if(elem) {
 		$.scrollTo(elem, 800, {
 			offset: -90
