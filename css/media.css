@@ -75,7 +75,7 @@
 	}
 
 	.header__logo a img {
-		width: 100%;
+		width: 150px;
 	}
 
 	h1 {
@@ -96,15 +96,25 @@
 @media only screen and (max-width : 480px) {
 
 	h1 {
-		margin: 25% auto;
+		margin: 170px auto;
 	}
 
 	.header__buttons {
 		bottom: 20px;
 	}
 
+	.header__logo {
+		width: 100%;
+	}
+
 	.header__logo a {
-		margin-top: 14px;
+		margin-top: 25px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.header__logo a img {
+		width: 200px;
 	}
 
 	.header__buttons .button {
@@ -251,13 +261,20 @@
 
 /* */
 
-@media screen and (min-width: 577px) and (max-width: 767px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
 	.header__logo a {
-		margin-top: -36px;
+		margin-top: -44px;
     	text-align: center;
 	}
 
 	.header__logo a img {
 		width: 70%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+	.header__logo a {
+		margin-top: 16px
 	}
 }
