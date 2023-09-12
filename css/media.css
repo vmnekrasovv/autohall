@@ -7,21 +7,15 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.header__top-line .header__address {
+		background: none;
+		padding-left: 0;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-
-	.header__top-line .header__address {
-		background: none;
-		padding-left: 0;
-	}
-
-	.header__top-line .row div:nth-child(2) {
-		order: 1;
-	}
 
 	.main-cats h2::before,
 	.main-cats h2::after {
@@ -35,14 +29,21 @@
 
 }
 
+@media only screen and (max-width : 767px) {
+	.header__top-line .row div:nth-child(2) {
+		order: 1;
+	}
+}
+
 @media only screen and (max-width : 576px) {
 	.header {
 		min-height: 90vh;
 		background-size: cover;
+		background-position: -240px 50%;
 	}
 
 	.header strong {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	.header__top-line {
@@ -50,7 +51,7 @@
 	}
 
 	.header__top-line a {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.header__phone,
@@ -67,8 +68,8 @@
 		/*margin-top: -15px;
     	width: 50%;
     	left: 25%;*/
+    	margin-top: -40px;
 
-    	margin-top: -32px;
 	    width: 100%;
 	    left: 0%;
 	}
@@ -79,15 +80,31 @@
 
 	h1 {
 		font-size: 25px;
-		margin-top: 20%;
+	    margin-top: 25%;
+	    background: rgba(0,0,0,.7);
+	    padding: 15px 10px 10px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    margin: 15% auto;
+	    width: 90%;
 	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 480px) {
 
+	h1 {
+		margin: 25% auto;
+	}
+
 	.header__buttons {
 		bottom: 20px;
+	}
+
+	.header__logo a {
+		margin-top: 14px;
 	}
 
 	.header__buttons .button {
@@ -230,4 +247,17 @@
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
+}
+
+/* */
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+	.header__logo a {
+		margin-top: -36px;
+    	text-align: center;
+	}
+
+	.header__logo a img {
+		width: 70%;
+	}
 }
