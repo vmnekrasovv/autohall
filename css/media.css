@@ -76,7 +76,7 @@
 		/*margin-top: -15px;
     	width: 50%;
     	left: 25%;*/
-    	margin-top: -40px;
+    	margin-top: -44px;
 
 	    width: 100%;
 	    left: 0%;
@@ -152,6 +152,10 @@
 
 	.top-nav {
 		height: auto;
+	}
+
+	.header__top-line_fixed .header__logo {
+		display: none;
 	}
 
 	.top-nav__item {
@@ -248,7 +252,9 @@
 }
 
 @media only screen and (min-width : 576px) {
-	
+	.header__top-line_fixed {
+		height: 85px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -276,8 +282,18 @@
     	text-align: center;
 	}
 
+	.header__top-line_fixed .header__logo a {
+		margin-top: -55px;
+	}
+
 	.header__logo a img {
 		width: 70%;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.header__top-line_fixed .header__logo a {
+		margin-top: 4px;
 	}
 }
 
