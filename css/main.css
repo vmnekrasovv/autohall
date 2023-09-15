@@ -184,8 +184,10 @@ h1 {
 	font-size: 40px;
 	color: #fff;
 	text-align: center;
-	margin-top: 72px;
+	margin-top: 90px;
 	text-shadow: rgba(0,0,0,0.75) 0 2px;
+	background: rgba(0,0,0,.7);
+	padding: 15px 5% 10px;
 }
 
 h2 {
