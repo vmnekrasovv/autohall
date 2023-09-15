@@ -2,7 +2,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+		.top-nav__item a {
+			border: none;
+			border-right: 1px solid #3b3b3b;
+		}
 }
 
 /* Medium Devices, Desktops */
@@ -10,6 +13,10 @@
 	.header__top-line .header__address {
 		background: none;
 		padding-left: 0;
+	}
+
+	.top-nav__item a {
+		border: #3b3b3b 1px solid;
 	}
 }
 
