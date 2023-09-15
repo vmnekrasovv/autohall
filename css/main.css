@@ -541,6 +541,7 @@ article.content .art-header {
 
 .s-bottom {
 	padding-top: 32px;
+	padding-bottom: 150px;
 }
 
 .s-bottom__header h2 {
@@ -569,7 +570,7 @@ article.content .art-header {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	bottom: 120px;
+	bottom: 150px;
 	right: 20px;
 	z-index: 100;
 	border-radius: 50%;

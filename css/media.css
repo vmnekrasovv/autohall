@@ -103,6 +103,10 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.go-to-up {
+		bottom: 170px;
+	}
 }
 
 /* Custom, iPhone Retina */
@@ -230,6 +234,10 @@
 	.footer .row>div:nth-child(2) li {
 		margin-bottom: 10px;
 	}
+
+	.go-to-up {
+		bottom: 220px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -328,5 +336,11 @@
 @media screen and (max-width: 340px) {
 	.main-cats h2 {
 		width: 75%;
+	}
+}
+
+@media screen and (min-width: 481px) {
+	.footer-menu {
+		margin-left: -10px;
 	}
 }
