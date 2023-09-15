@@ -97,6 +97,12 @@
 	    margin: 15% auto;
 	    width: 90%;
 	}
+
+	.main-cats h2 {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 /* Custom, iPhone Retina */
@@ -168,7 +174,9 @@
 	}
 
 	.main-cats h2, .art-header {
-		font-size: 20px;
+		font-size: 30px;
+	    width: 70%;
+	    margin: 35px auto 20px;
 	}
 	
 	.main-cats__item-wrap {
@@ -177,14 +185,6 @@
 
 	.waranty {
 		margin: 30px auto;
-	}
-
-	body .main-cats__item-wrap > ul {
-		left: 0;
-	}
-
-	.main-cats h2 {
-		margin-top: 10px;
 	}
 
 	h2.art-header {
@@ -283,5 +283,32 @@
 
 	.header__logo a {
 		margin-top: 16px
+	}
+}
+
+@media screen and (min-width: 870px) and (max-width: 1040px) {
+	.main-cats__item-wrap {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.main-cats__item-wrap {
+		width: 280px;
+		margin-bottom: 10px;
+	}
+
+	.main-cats__toggle {
+		background-position: 50% -22px;
+	}
+
+	.main-cats__item-wrap.active .main-cats__toggle {
+		background-position: 50% 8px;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.main-cats h2 {
+		width: 75%;
 	}
 }
