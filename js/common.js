@@ -229,3 +229,7 @@ $(window).bind("resize", function() {
 	});
 });
 })(jQuery, document, window, ResponsiveBootstrapToolkit);
+
+var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+});
