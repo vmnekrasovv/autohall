@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="css/bootstrap-4.min.css">
 
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/fancybox/fancybox.css" />
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
@@ -52,7 +52,11 @@
 					<div class="col-6 col-md-4">
 						<div class="header__address">
 							<strong>Москва</strong>
-							<a href="#map" class="fancybox">ул. Верейская, 29 стр. 35</a>
+							<a href="#map" data-fancybox data-src="#map">ул. Верейская, 29 стр. 35</a>
+							
+							<div id="map" style="display: none;">
+								<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/vereyskaya_ulitsa_29s35/Z04YcgRoS0cDQFtvfXtxeXlrZg==/?ll=37.438224%2C55.708582&source=serp_navig&tilt=0.87&utm_medium=mapframe&utm_source=maps&z=17.08" style="color:#eee;font-size:12px;position:absolute;top:14px;">Верейская улица, 29с35 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.438224%2C55.708582&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY4MjQ4NRJB0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCS0LXRgNC10LnRgdC60LDRjyDRg9C70LjRhtCwLCAyOdGBMzUiCg29wBVCFZfVXkI%2C&source=serp_navig&tilt=0.87&z=17.08" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+							</div>
 						</div>
 					</div>
 
@@ -67,7 +71,14 @@
 					<div class="col-6 col-md-4">
 						<div class="header__phone">
 							<strong>+7 (499) <span>391-71-53</span></strong>
-							<a href="#callback" class="fancybox">Заказать обратный звонок</a>
+							<a href="#callback" data-fancybox data-src="#callback">Заказать обратный звонок</a>
+							<div id="callback" style="display: none;">
+								<form action="/">
+									<input type="text" name="name" placeholder="Имя">
+									<input type="tel" name="phone" placeholder="Телефон">
+									<input type="submit" value="Callback">
+								</form>
+							</div>
 						</div>
 					</div>
 				
@@ -230,7 +241,7 @@
 				<div class="container-xl">
 					<div class="col-md-12">
 						<div class="main-cats__button-wrap">
-							<a href="#callback" class="button fancybox">Оставить заявку</a>
+							<a href="#request" class="button" data-fancybox data-src="#request">Оставить заявку</a>
 						</div>
 					</div>
 				</div>
@@ -256,7 +267,7 @@
 
 					 <div class="col-md-6 col-lg-4">
 					 	<div class="home-items__item">
-					 		<a href="img/ex_1.jpg" class="fancybox" data-fancybox-group="group">
+					 		<a href="img/ex_1.jpg" data-fancybox="gallery-1">
 					 			<img src="img/ex_1.jpg" alt="">
 					 		</a>
 					 		<p>Нам под силу виртуозное выполнение такого сложного автотехнического процесса, как антикоррозийная обработка автомобиля! Многие владельцы современных машин считают, что коррозия им не страшна, но это не так.</p>
@@ -265,7 +276,7 @@
 
 					  <div class="col-md-6 col-lg-4">
 					 	<div class="home-items__item">
-					 		<a href="img/ex_1.jpg" class="fancybox" data-fancybox-group="group">
+					 		<a href="img/ex_1.jpg" data-fancybox="gallery-1">
 					 			<img src="img/ex_1.jpg" alt="">
 					 		</a>
 					 		<p>Нам под силу виртуозное выполнение такого сложного автотехнического процесса, как антикоррозийная обработка автомобиля! Многие владельцы современных машин считают, что коррозия им не страшна, но это не так.</p>
@@ -274,7 +285,7 @@
 
 					  <div class="col-md-6 col-lg-4">
 					 	<div class="home-items__item">
-					 		<a href="img/ex_1.jpg" class="fancybox" data-fancybox-group="group">
+					 		<a href="img/ex_1.jpg" data-fancybox="gallery-1">
 					 			<img src="img/ex_1.jpg" alt="">
 					 		</a>
 					 		<p>Нам под силу виртуозное выполнение такого сложного автотехнического процесса, как антикоррозийная обработка автомобиля! Многие владельцы современных машин считают, что коррозия им не страшна, но это не так.</p>
@@ -283,7 +294,7 @@
 
 					  <div class="col-md-6 col-lg-4">
 					 	<div class="home-items__item">
-					 		<a href="img/ex_1.jpg" class="fancybox" data-fancybox-group="group">
+					 		<a href="img/ex_1.jpg" data-fancybox="gallery-1">
 					 			<img src="img/ex_1.jpg" alt="">
 					 		</a>
 					 		<p>Нам под силу виртуозное выполнение такого сложного автотехнического процесса, как антикоррозийная обработка автомобиля! Многие владельцы современных машин считают, что коррозия им не страшна, но это не так. </p>
@@ -292,7 +303,7 @@
 
 					  <div class="col-md-6 col-lg-4">
 					 	<div class="home-items__item">
-					 		<a href="img/ex_1.jpg" class="fancybox" data-fancybox-group="group">
+					 		<a href="img/ex_1.jpg" data-fancybox="gallery-1">
 					 			<img src="img/ex_1.jpg" alt="">
 					 		</a>
 					 		<p>Нам под силу виртуозное выполнение такого сложного автотехнического процесса, как антикоррозийная обработка автомобиля! Многие владельцы современных машин считают, что коррозия им не страшна, но это не так.</p>
@@ -301,7 +312,7 @@
 
 					  <div class="col-md-6 col-lg-4">
 					 	<div class="home-items__item">
-					 		<a href="img/ex_1.jpg" class="fancybox" data-fancybox-group="group">
+					 		<a href="img/ex_1.jpg" data-fancybox="gallery-1">
 					 			<img src="img/ex_1.jpg" alt="">
 					 		</a>
 					 		<p>Нам под силу виртуозное выполнение такого сложного автотехнического процесса, как антикоррозийная обработка автомобиля! Многие владельцы современных машин считают, что коррозия им не страшна, но это не так.</p>
@@ -323,7 +334,7 @@
 				</div>
 				<div class="col-sm-4">
 					<div class="s-bottom__header button-cont">
-						<a href="#callback" class="button">Оставить заявку</a>
+						<a href="#request" class="button" data-fancybox data-src="#request">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -366,6 +377,14 @@
 		</div>
 	</footer>
 
+	<div id="request" style="display: none;">
+		<form action="/">
+			<input type="text" name="name" placeholder="Имя">
+			<input type="tel" name="phone" placeholder="Телефон">
+			<input type="submit" value="Request">
+		</form>
+	</div>
+
 	<div class="hidden"></div>
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
 	<div class="device-xs visible-xs"></div>
@@ -381,7 +400,7 @@
 	<![endif]-->
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
 	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/fancybox/fancybox.umd.js"></script>
 	
 	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>

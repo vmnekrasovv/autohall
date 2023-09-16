@@ -476,7 +476,8 @@ body .main-cats__item-wrap > ul {
 
 .main-cats__button-wrap {
 	margin-top: 50px;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 /**
@@ -570,7 +571,7 @@ article.content .art-header {
 
 
 .s-bottom__content {
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .s-bottom__content .row .col-left {

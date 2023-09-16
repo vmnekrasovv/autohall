@@ -8,8 +8,10 @@ $(document).ready(function() {
 			topLineFix    = 'header__top-line_fixed';
 
 			if(direction == 'down') {
+				console.log(direction);
 				topLine.addClass(topLineFix);
 			} else if(direction == 'up'){
+				console.log(direction);
 
 				topLine.addClass('header__top-line_up');
 				topLine.removeClass(topLineFix);
@@ -19,6 +21,8 @@ $(document).ready(function() {
 		}
 	});
 
+
+// тоже самое без waypoint
 
 
 	/*let target 		  = $('#thing'),
@@ -36,6 +40,11 @@ $(document).ready(function() {
 
 	});
 */
+
+///////////////////////////////////////////////////////////////
+
+
+
 
 	/*$('.home-items').on('mousewheel', function(event) {
    	 console.log(event.deltaX, event.deltaY, event.deltaFactor);
@@ -90,7 +99,9 @@ $(document).ready(function() {
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
+	Fancybox.bind("[data-fancybox]", {
+  		// Your custom options
+	});
 
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
@@ -109,7 +120,7 @@ $(document).ready(function() {
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	$(".button").click(function(e) {
+	$(".test-button").click(function(e) {
 		e.preventDefault();
 
 		
@@ -191,7 +202,7 @@ $(document).ready(function() {
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
-				$.fancybox.close();
+				// $.fancybox.close(); // из старой версии фанси
 			}, 1000);
 		});
 		return false;
