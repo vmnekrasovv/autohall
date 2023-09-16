@@ -54,15 +54,19 @@ body {
 
 .button {
 	height: 50px;
-	padding: 0 25px;
-	display: inline-block;
-	vertical-align: middle;
-	background-color: #d12f22;
-	border-bottom: 3px #ac160a solid;
-	font-size: 19px;
-	line-height: 50px;
-	color: #fff;
-	font-family: "BebasRegular";
+    padding: 0 25px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+ 
+    font-size: 19px;
+    color: #fff;
+    font-family: "BebasRegular";
+    background-color: #d12f22;
+    border-bottom: 3px #ac160a solid;
+    
 }
 
 .button:hover {
@@ -206,12 +210,16 @@ h2 {
 	bottom: 30px;
 }
 
+.header-buttons-col {
+	display: flex;
+}
+
 .header__buttons .button {
 	margin-right: 20px;
 }
 
 .header__button-icon {
-	padding-top: 8px;
+	padding-top: 4px;
 	padding-left: 62px;
 	line-height: 18px;
 	text-align: left;
@@ -556,7 +564,8 @@ article.content .art-header {
 }
 
 .s-bottom__header.button-cont {
-	text-align: right;
+	display: flex;
+    justify-content: flex-end;
 }
 
 

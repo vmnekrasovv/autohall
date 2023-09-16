@@ -116,8 +116,10 @@
 	}
 
 	.s-bottom__header.button-cont {
-		text-align: center;
 		padding-top: 10px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
 	}
 }
 
@@ -160,9 +162,8 @@
 
 	.s-bottom .button {
 		height: 50px;
-   		padding: 0 25px;
+	    padding: 3px 25px 0;
 	    font-size: 19px;
-	    line-height: 50px;
 	}
 
 	.header__button-icon {
@@ -250,6 +251,13 @@
 
 	.go-to-up {
 		bottom: 220px;
+	}
+}
+
+
+@media screen and (max-width: 360px) {
+	.s-bottom__header h2 {
+		font-size: 26px;
 	}
 }
 
