@@ -59,7 +59,7 @@ body {
 	vertical-align: middle;
 	background-color: #d12f22;
 	border-bottom: 3px #ac160a solid;
-	font-size: 20px;
+	font-size: 19px;
 	line-height: 50px;
 	color: #fff;
 	font-family: "BebasRegular";
@@ -166,6 +166,10 @@ body {
 .header__logo a {
 	position: absolute;
 	margin-top: -20px;
+}
+
+.header__logo a img {
+	border-radius: 100%;
 }
 
 .header__phone {
@@ -555,14 +559,20 @@ article.content .art-header {
 	text-align: right;
 }
 
-.s-bottom img {
-	max-width: 90%;
-	position: absolute;
-	bottom: 0;
-}
 
 .s-bottom__content {
 	margin-top: 30px;
+}
+
+.s-bottom__content .row .col-left {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+
+}
+
+.s-bottom__content .row .col-left img {
+	width: 100%;
 }
 
 

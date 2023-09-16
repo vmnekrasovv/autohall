@@ -109,6 +109,18 @@
 	}
 }
 
+@media screen and (max-width: 575px) {
+	.s-bottom__header h2 {
+		text-align: center;
+		font-size: 35px;
+	}
+
+	.s-bottom__header.button-cont {
+		text-align: center;
+		padding-top: 10px;
+	}
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 480px) {
 
@@ -144,6 +156,13 @@
 	    display: inline-block; 
 	    font-size: 14px;
 	    line-height: 44px;
+	}
+
+	.s-bottom .button {
+		height: 50px;
+   		padding: 0 25px;
+	    font-size: 19px;
+	    line-height: 50px;
 	}
 
 	.header__button-icon {
@@ -204,13 +223,7 @@
 	}*/
 
 	.s-bottom__header h2 {
-		text-align: center;
-		font-size: 25px;
-	}
-
-	.s-bottom__header.button-cont {
-		text-align: center;
-		padding-top: 10px;
+		font-size: 30px;
 	}
 
 	.s-bottom img {
@@ -284,6 +297,13 @@
 
 /* */
 
+@media screen and (min-width: 576px) and (max-width: 768px) {
+	.s-bottom__content .row .col-left {
+		align-items: flex-start;
+	}
+}
+
+
 @media screen and (min-width: 577px) and (max-width: 768px) {
 	.header__logo a {
 		margin-top: -44px;
@@ -298,6 +318,8 @@
 		width: 70%;
 	}
 }
+
+
 
 @media screen and (min-width: 769px) {
 	.header__top-line_fixed .header__logo a {
@@ -342,5 +364,11 @@
 @media screen and (min-width: 481px) {
 	.footer-menu {
 		margin-left: -10px;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 640px) {
+	.s-bottom__header h2 {
+		font-size: 32px;
 	}
 }
