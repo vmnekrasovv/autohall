@@ -64,8 +64,8 @@ $(document).ready(function() {
 /*	var eqElement = ".home-items__item, .s-bottom__content > div"
 	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});*/
 
-	var eqElement = ".home-items__item";
-	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});
+	/*var eqElement = ".home-items__item";
+	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});*/
 
 	
 	//Цели для Яндекс.Метрики и Google Analytics
