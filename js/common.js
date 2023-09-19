@@ -103,11 +103,6 @@ $(document).ready(function() {
   		// Your custom options
 	});
 
-	//Навигация по Landing Page
-	//$(".top_mnu") - это верхняя панель со ссылками.
-	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
-
 	//Добавляет классы дочерним блокам .block для анимации
 	//Документация: http://imakewebthings.com/jquery-waypoints/
 	$(".block").waypoint(function(direction) {
@@ -118,33 +113,6 @@ $(document).ready(function() {
 		};
 	}, {offset: 100});
 
-	//Плавный скролл до блока .div по клику на .scroll
-	//Документация: https://github.com/flesler/jquery.scrollTo
-	$(".test-button").click(function(e) {
-		e.preventDefault();
-
-		
-		$('html, body').animate({
-			scrollTop: $('.footer').offset().top
-		}, 500, function(){
-			//console.log('callback function');
-		});
-
-		/*$.scrollTo(250, 800, {
-			offset: 1000
-		});*/
-	});
-
-	//Скролл до id, указанного в hash URL
-	var elem = window.location.hash;
-
-	console.log('location.hash: ' + window.location.hash);
-	
-	if(elem) {
-		$.scrollTo(elem, 800, {
-			offset: -90
-		});
-	};
 
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/

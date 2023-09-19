@@ -380,15 +380,15 @@ h2 {
 	color: #fff;
 }
 
-.main-cats__item h4 {
+.main-cats__item h3 {
 	margin: 10px 0;
 	font-family: "BebasBold";
 	font-size: 18px;
 	font-weight: normal;
 }
 
-.main-cats__item-wrap a:hover h4,
-.main-cats__item-wrap.active h4 {
+.main-cats__item-wrap a:hover h3,
+.main-cats__item-wrap.active h3 {
 	text-decoration: underline;
 }
 
