@@ -8,49 +8,20 @@ $(document).ready(function() {
 			topLineFix    = 'header__top-line_fixed';
 
 			if(direction == 'down') {
-				console.log(direction);
 				topLine.addClass(topLineFix);
 			} else if(direction == 'up'){
-				console.log(direction);
-
-				topLine.addClass('header__top-line_up');
 				topLine.removeClass(topLineFix);
-				topLine.removeClass('header__top-line_up');
-
+				
+				/*topLine.addClass('header__top-line_up');
+				topLine.removeClass('header__top-line_up');*/
 			}
 		}
 	});
 
 
-// тоже самое без waypoint
-
-
-	/*let target 		  = $('#thing'),
-		targetYOffset = target.offset().top,
-		topLine 	  = $('.header__top-line'),
-		topLineFix    = 'header__top-line_fixed';
-
-	$(window).on('scroll', function(){
-
-		if(pageYOffset > targetYOffset){
-			topLine.addClass(topLineFix);
-		} else {
-			topLine.removeClass(topLineFix);
-		}
-
-	});
-*/
-
-///////////////////////////////////////////////////////////////
-
-
-
-
 	/*$('.home-items').on('mousewheel', function(event) {
    	 console.log(event.deltaX, event.deltaY, event.deltaFactor);
 	});*/
-
-
 
 
 	$('.main-cats__item-wrap').click(function(){
@@ -83,11 +54,6 @@ $(document).ready(function() {
 		verticalOffset: 40
 	});
 
-	
-
-	//Masked Input Plugin
-	//Документация: http://digitalbush.com/projects/masked-input-plugin/
-	//$("#date").mask("99/99/9999", {placeholder : "mm/dd/yyyy"});
 
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
