@@ -146,7 +146,8 @@ $(document).ready(function() {
 
 // Адаптивные скрипты, которые срабатывают только при определенном разрешении экрана
 // Документация: https://github.com/maciej-gurban/responsive-bootstrap-toolkit
-(function($, document, window, viewport) {
+// 
+/*(function($, document, window, viewport) {
 	function resizeWindow() {
 		// $("a").click(function() {
 		// 	if (viewport.is("lg")) {
@@ -162,7 +163,7 @@ $(window).bind("resize", function() {
 		resizeWindow();
 	});
 });
-})(jQuery, document, window, ResponsiveBootstrapToolkit);
+})(jQuery, document, window, ResponsiveBootstrapToolkit);*/
 
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here
