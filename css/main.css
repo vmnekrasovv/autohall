@@ -193,8 +193,9 @@ h1 {
 	text-align: center;
 	margin-top: 90px;
 	text-shadow: rgba(0,0,0,0.75) 0 2px;
-	background: rgba(0,0,0,.7);
-	padding: 15px 5% 10px;
+	/*background: rgba(0,0,0,.7);*/
+	background-image: linear-gradient(to right, rgba(0,0,0,.02) 15%, rgba(0,0,0,.1) 25%, rgba(0,0,0,.7) 40%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.02) 100%);
+	padding: 20px 5%;
 }
 
 h2 {
