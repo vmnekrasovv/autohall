@@ -29,15 +29,6 @@ $(document).ready(function() {
 		$(this).addClass('active').find('ul').toggle();
 	});
 
-	//equalheight - одинаковая высота колонок
-	//Пример списка элементов:
-	//var eqElement = ".cat_container > div, .home_news > div"
-/*	var eqElement = ".home-items__item, .s-bottom__content > div"
-	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});*/
-
-	/*var eqElement = ".home-items__item";
-	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});*/
-
 	
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
@@ -46,14 +37,6 @@ $(document).ready(function() {
 		return true;
 	}));
 
-	//Stellar - Parallax Plugin
-	//Документация: https://github.com/markdalgleish/stellar.js
-	//HTML: <div class="parallax" data-stellar-background-ratio="0.5"></div>
-	$.stellar({
-		horizontalScrolling: false,
-		verticalOffset: 40
-	});
-
 
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
@@ -61,10 +44,7 @@ $(document).ready(function() {
 	var austDay = new Date($(".countdown").attr("date-time"));
 	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
 
-	//Попап менеджер FancyBox
-	//Документация: http://fancybox.net/howto
-	//<a class="fancybox"><img src="image.jpg" /></a>
-	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
+	
 	Fancybox.bind("[data-fancybox]", {
   		// Your custom options
 	});
@@ -80,45 +60,6 @@ $(document).ready(function() {
 	}, {offset: 100});
 
 
-	//Каруселька
-	//Документация: http://owlgraphic.com/owlcarousel/
-	function carousel_1() {
-		var owl = $(".carousel");
-		owl.owlCarousel({
-			items : 1,
-			loop : true,
-			autoHeight : true,
-			dots : true,
-			singleItem : true
-		});
-		owl.on("mousewheel", ".owl-wrapper", function (e) {
-			if (e.deltaY > 0) {
-				owl.trigger("owl.prev");
-			} else {
-				owl.trigger("owl.next");
-			}
-			e.preventDefault();
-		});
-		$(".next_button").click(function() {
-			owl.trigger("owl.next");
-		});
-		$(".prev_button").click(function() {
-			owl.trigger("owl.prev");
-		});
-		owl.on("resized.owl.carousel", function(event) {
-			var $this = $(this);
-			$this.find(".owl-height").css("height", $this.find(".owl-item.active").height());
-		});
-		setTimeout(function() {
-			owl.find(".owl-height").css("height", owl.find(".owl-item.active").height());
-		}, 5000);
-	};
-	carousel_1();
-
-	//Кнопка "Наверх"
-	//Документация:
-	//http://api.jquery.com/scrolltop/
-	//http://api.jquery.com/animate/
 	$("#top").click(function () {
 		$("body, html").animate({
 			scrollTop: 0
@@ -144,27 +85,11 @@ $(document).ready(function() {
 	
 });
 
-// Адаптивные скрипты, которые срабатывают только при определенном разрешении экрана
-// Документация: https://github.com/maciej-gurban/responsive-bootstrap-toolkit
-// 
-/*(function($, document, window, viewport) {
-	function resizeWindow() {
-		// $("a").click(function() {
-		// 	if (viewport.is("lg")) {
-		// 		return false;
-		// 	};
-		// });
-};
-$(document).ready(function() {
-	resizeWindow();
-});
-$(window).bind("resize", function() {
-	viewport.changed(function(){
-		resizeWindow();
-	});
-});
-})(jQuery, document, window, ResponsiveBootstrapToolkit);*/
-
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here
+});
+
+$('.parallax-window').parallax({
+	imageSrc: 'img/optimize/header_bg.webp',
+	speed: .7,
 });

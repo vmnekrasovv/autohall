@@ -44,9 +44,7 @@
 
 @media only screen and (max-width : 576px) {
 	.header {
-		min-height: 90vh;
-		background-size: cover;
-		background-position: -240px 50%;
+		min-height: calc(90vh + 50px);
 	}
 
 	.header strong {
@@ -88,7 +86,7 @@
 
 	h1 {
 		font-size: 30px;
-	    background: rgba(0,0,0,.7);
+	    background-image: linear-gradient(to right, rgba(0,0,0,.02) 15%, rgba(0,0,0,.1) 25%, rgba(0,0,0,.7) 40%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.02) 100%);
 	    padding: 15px 5% 10px;
 	    position: absolute;
 	    top: 0;
@@ -378,5 +376,10 @@
 @media screen and (min-width: 576px) and (max-width: 640px) {
 	.s-bottom__header h2 {
 		font-size: 32px;
+	}
+}
+@media screen and (width: 768px) {
+	.header__logo {
+		margin-top: 60px;
 	}
 }
